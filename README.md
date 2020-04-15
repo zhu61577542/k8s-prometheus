@@ -6,6 +6,9 @@
 - node_exporter目录：于kubernetes集群各节点部署node_exporter。
 - kube-state-metrics：聚合kubernetes资源对象，提供指标数据。
 
+- 因为没有持久存储，所有数据全都存储到内存。不适合生产环境
+- 要部署在生产环境上必须考虑使用 StatefulSet 并且配置pv
 
 #### 参考：https://github.com/stefanprodan/k8s-prom-hpa
+
 
